@@ -1,0 +1,11 @@
+* { 
+	box-sizing: border-box;
+}
+body { 
+	background-color: #ffffff; 
+	color: #666666;
+	font-family: Arial, Helevetica, sans-serif;
+}
+table, th, td {
+	border: 1px solid;
+  }

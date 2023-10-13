@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Name: Gerald Polk -->
+	<!-- Date: 9/20/23 -->
+	<!-- Description: Creates a sum from 1 to user typed integer -->
+    <!-- link, style, and script elements go here -->
+    <title>Create A Sum Of Numbers</title>
+    <script>
+        do {                                                    // repeats entire application
+            var invalid = 0, valid = 0;
+            do {                                                // checks to see if user input is valid or invalid
+                var userInt = prompt("Enter any top number to sum \nfrom 1 through 100");
+                if (userInt < 1 || userInt > 100) {             
+                    invalid = userInt;
+                        alert("Please enter a number between 1 and 100");
+                } else {
+                    valid = userInt;
+                }
+            }
+            while (valid != userInt);
+
+            var sumOfNumbers = 0;
+            for (counter = 1; counter <= userInt; counter++) {  // loop for calculating sums of numbers
+                    sumOfNumbers += counter;                    // adds counter to sumOfNumbers
+            }
+
+            alert("The sum of the numbers from 1 through " + userInt + " is " + sumOfNumbers);
+            var repeat = prompt("Do another sum? \nEnter \"y\" if Yes");
+        }
+        while (repeat == "y");
+    </script>
+</head>
+</html>
